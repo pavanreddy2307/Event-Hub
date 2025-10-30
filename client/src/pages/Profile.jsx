@@ -166,7 +166,7 @@ function Profile() {
                         <button onClick={
                             ()=>{
                                 const data={...userDetails,['skills']:skills,['profileLinks']:urlLinks,['internships']:intern}
-                                axios.post(`http://localhost:8080/update`,data)
+                                axios.post(`https://event-hub-5axu.onrender.com/update`,data)
                                 .then(result=>{
                                     console.log(result);
                                     if (result.status ===200){
