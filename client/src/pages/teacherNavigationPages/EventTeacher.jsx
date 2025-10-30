@@ -29,7 +29,7 @@ const EventTeacher = () => {
         const fetchEvent = async () => {
             try {
                 setLoading(true);
-                const response = await axios.post('http://localhost:8080/getEvent', { EventName: eventName });
+                const response = await axios.post('https://event-hub-5axu.onrender.com/getEvent', { EventName: eventName });
                 setEvent(response.data.events);
             } catch (err) {
                 setError('Failed to fetch event details');
@@ -44,7 +44,7 @@ const EventTeacher = () => {
 
     const handleDownload = async () => {
         try {
-            const response = await axios.post('http://localhost:8080/getUsers', {
+            const response = await axios.post('https://event-hub-5axu.onrender.com/getUsers', {
                 EventName: eventName
             });
 
