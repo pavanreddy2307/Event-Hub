@@ -45,7 +45,7 @@ function login() {
         setTeacher('');
         setTeacPass('');
       }
-      axios.post(`http://localhost:8080/${type}Login`,data)
+      axios.post(`https://event-hub-5axu.onrender.com/${type}Login`,data)
         .then(result=>{
           console.log(result)
           if(result.status === 200){
