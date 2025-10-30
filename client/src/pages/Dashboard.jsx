@@ -22,7 +22,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/getEvent');
+        const response = await axios.get('https://event-hub-5axu.onrender.com/getEvent');
       
         if(response.status === 200) {
           setEvents(response.data.events);
