@@ -24,7 +24,7 @@ function Teacherboard() {
       setUserDetails(parsedUser);
 
       // Fetch teacher events
-      axios.post('http://localhost:8080/teacherEvent', {
+      axios.post('https://event-hub-5axu.onrender.com/teacherEvent', {
         userName: parsedUser.userName,
       })
       .then(response => {
