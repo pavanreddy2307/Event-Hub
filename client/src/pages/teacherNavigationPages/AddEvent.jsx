@@ -42,7 +42,7 @@ function AddEvent() {
     };
 
     try {
-      const response = await axios.post('http://localhost:8080/addEvent', eventDetails);
+      const response = await axios.post('https://event-hub-5axu.onrender.com/addEvent', eventDetails);
 
       if (response.status === 200) {
         navigate('/teacher');
