@@ -30,7 +30,7 @@ const EventCard = () => {
         const fetchEvent = async () => {
             try {
                 setLoading(true);
-                const response = await axios.post('http://localhost:8080/getEvent', { EventName: eventName });
+                const response = await axios.post('https://event-hub-5axu.onrender.com/getEvent', { EventName: eventName });
                 setEvent(response.data.events);
             } catch (err) {
                 setError('Failed to fetch event details');
@@ -60,7 +60,7 @@ const EventCard = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:8080/update', updatedUserDetails);
+            const response = await axios.post('https://event-hub-5axu.onrender.com/update', updatedUserDetails);
 
             if (response.status === 200) {
             localStorage.setItem('userDetails', JSON.stringify(updatedUserDetails));
@@ -89,7 +89,7 @@ const EventCard = () => {
 
 
         try {
-            const response = await axios.post('http://localhost:8080/apply', updatedUserDetails);
+            const response = await axios.post('https://event-hub-5axu.onrender.com/apply', updatedUserDetails);
 
             if (response.status === 200) {
             localStorage.setItem('userDetails', JSON.stringify(updatedUserDetails));
