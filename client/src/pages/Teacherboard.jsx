@@ -111,7 +111,7 @@ function Teacherboard() {
             <div className="userProfile">
               <div className="profile">
                 <Link to={'/profile'}>
-                  <img src={img_} alt="Profile" />
+                  <img src="image.png" alt="Profile" />
                 </Link>
               </div>
             </div>
