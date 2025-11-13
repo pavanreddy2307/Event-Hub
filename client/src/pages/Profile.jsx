@@ -92,7 +92,7 @@ function Profile() {
                 <div className="profile-header">
                     <div className="profile-content">
                         <div className="profile-image">
-                            <img src={img_} alt={userDetails.name} />
+                            <img src="image.png" alt={userDetails.name} />
                         </div>
                         <div className="profile-info">
                             <h1>{userDetails.name}</h1>
