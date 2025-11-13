@@ -3,12 +3,6 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
 
-// ✅ Import images directly (recommended for Vite)
-import teacherImg from '../assets/teacher.png';
-import studentImg from '../assets/student.png';
-import logSvg from '/img/log.svg';        // from /public/img/log.svg
-import registerSvg from '/img/register.svg'; // from /public/img/register.svg
-
 function Login() {
   const [toggle, setToggle] = useState(false);
   const [studentUser, setStudent] = useState('');
@@ -136,28 +130,27 @@ function Login() {
           </div>
         </div>
 
-        {/* ✅ Panels with fixed image references */}
         <div className="panels-container">
           <div className="panel left-panel">
             <div className="content">
-              <img src={teacherImg} alt="Teacher" height={400} style={{ margin: '-5px' }} />
+              <img src="/teacher.png" alt="Teacher" height={400} style={{ margin: '-5px' }} />
               <p>Login as Teacher</p>
               <button className="btn transparent" id="sign-up-btn" onClick={toggleClass}>
                 Login
               </button>
             </div>
-            <img src={logSvg} className="image" alt="Log in" />
+            <img src="/img/log.svg" className="image" alt="Log in" />
           </div>
 
           <div className="panel right-panel">
             <div className="content">
-              <img src={studentImg} alt="Student" height={400} />
+              <img src="/student.png" alt="Student" height={400} />
               <p>Login as Student</p>
               <button className="btn transparent" id="sign-in-btn" onClick={toggleClass}>
                 Login
               </button>
             </div>
-            <img src={registerSvg} className="image" alt="Register" />
+            <img src="/img/register.svg" className="image" alt="Register" />
           </div>
         </div>
       </div>
