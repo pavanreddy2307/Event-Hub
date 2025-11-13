@@ -139,7 +139,7 @@ function Login() {
                 Login
               </button>
             </div>
-            <img src="/img/log.svg" className="image" alt="Log in" />
+            
           </div>
 
           <div className="panel right-panel">
