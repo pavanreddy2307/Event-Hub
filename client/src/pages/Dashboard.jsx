@@ -173,7 +173,7 @@ function Dashboard() {
             </div>
             <div className="userProfile">
               <div className="profile">
-              <Link to={'/profile'} ><img src={/image.png} alt=""/></Link>
+              <Link to={'/profile'} ><img src="/image.png" alt=""/></Link>
               </div>
             </div>
           </div>
