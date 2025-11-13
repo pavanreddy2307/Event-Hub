@@ -150,7 +150,6 @@ function Login() {
                 Login
               </button>
             </div>
-            <img src="/img/register.svg" className="image" alt="Register" />
           </div>
         </div>
       </div>
