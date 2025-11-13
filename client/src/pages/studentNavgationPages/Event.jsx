@@ -22,7 +22,7 @@ function Event(props) {
             <div className="apply_tag" style={applied?{display:'inline'}:null}>applied</div>
             <div className="userPost">
                     <div className="userProfile_img">
-                        <img src={img_} alt="" />
+                        <img src="/image.png"alt="" />
                     </div>
                     
                     {applied ? (
