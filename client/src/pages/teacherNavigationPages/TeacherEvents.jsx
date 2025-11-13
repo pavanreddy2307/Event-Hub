@@ -22,7 +22,7 @@ function TeacherEvents(props) {
            
             <div className="userPost">
                     <div className="userProfile_img">
-                        <img src={img_} alt="" />
+                        <img src="image.png" alt="" />
                     </div>
                     
                     
