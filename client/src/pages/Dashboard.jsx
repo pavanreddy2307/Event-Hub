@@ -94,7 +94,7 @@ function Dashboard() {
     ));
   },[userSkills]);
   // console.log(list_items);
-  const img_ = userDetails && userDetails.profileImg ? userDetails.profileImg : '../src/assets/image.png';
+  const img_ = userDetails && userDetails.profileImg ? userDetails.profileImg : '/image.png';
   if (!userDetails) {
     return <div>Loading...</div>;
   }
